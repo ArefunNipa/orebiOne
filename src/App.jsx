@@ -10,6 +10,7 @@ import { HiMiniBars2 } from "react-icons/hi2";
 import { IoSearch } from "react-icons/io5";
 import { FaUser, FaShoppingCart } from "react-icons/fa";
 import Heading2 from './components/Heading2'
+// import bannerImage from './assets/Image.jpg'
 
 
 function App() {
@@ -66,7 +67,7 @@ function App() {
       {/* Menu Part End */}
 
       {/* Banner Part Start */}
-      <div className="bg-banner bg-no-repeat bg-cover bg-center">
+      <div className="bg-[url('./assets/Image.jpg')] bg-no-repeat bg-cover bg-center">
         <Container>
           <Flex className={"justify-start"}>
             <div className="w-1/2 ml-40 py-44">
