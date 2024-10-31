@@ -10,7 +10,6 @@ import { HiMiniBars2 } from "react-icons/hi2";
 import { IoSearch } from "react-icons/io5";
 import { FaUser, FaShoppingCart } from "react-icons/fa";
 import Heading2 from './components/Heading2'
-// import bannerImage from './assets/Image.jpg'
 
 
 function App() {
