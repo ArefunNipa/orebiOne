@@ -67,7 +67,7 @@ function App() {
       {/* Menu Part End */}
 
       {/* Banner Part Start */}
-      <div className="bg-[url('./assets/Image.jpg')] bg-no-repeat bg-cover bg-center">
+      <div className="bg-banner bg-no-repeat bg-cover bg-center">
         <Container>
           <Flex className={"justify-start"}>
             <div className="w-1/2 ml-40 py-44">
