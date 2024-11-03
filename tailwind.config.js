@@ -18,7 +18,7 @@ export default {
         'menuBg':'#F5F5F3',
       },
       backgroundImage: {
-        'banner': "url('./src/assets/Image.jpg')",
+        'banner': "url('../src/assets/Image.jpg')",
       }
     },
   },
