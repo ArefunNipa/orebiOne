@@ -8,9 +8,9 @@ import Button from './components/Button'
 import Heading from './components/Heading'
 import { HiMiniBars2 } from "react-icons/hi2";
 import { IoSearch } from "react-icons/io5";
-import { FaUser, FaShoppingCart } from "react-icons/fa";
+import { FaUser, FaShoppingCart, FaTruck, FaUndo } from "react-icons/fa";
+import { TbNumber2 } from "react-icons/tb";
 import Heading2 from './components/Heading2'
-// import bannerImage from './assets/Image.jpg'
 
 
 function App() {
@@ -51,13 +51,13 @@ function App() {
             </div>
             <div className="w-[60%]">
               <form class="flex items-center justify-center relative">
-                <input placeholder="Search Products" type="search" className='inline w-3/4 border-0 bg-white py-3 pl-3 pr-3 leading-5 placeholder-gray-300 focus:outline-none' />
-                <button type="submit" className='absolute right-32 top-0 bottom-0 text-xl'><IoSearch /></button>
+                <input placeholder="Search Products" type="search" className='inline w-full border-0 bg-white py-3 pl-3 pr-3 leading-5 placeholder-gray-300 focus:outline-none' />
+                <button type="submit" className='absolute right-4 top-0 bottom-0 text-xl'><IoSearch /></button>
               </form>
             </div>
             <div className="w-[20%]">
-              <Flex className={"justify-center"}>
-                <FaUser className='mr-5'/>
+              <Flex className={"justify-end"}>
+                <FaUser className='mr-5' />
                 <FaShoppingCart />
               </Flex>
             </div>
@@ -67,7 +67,7 @@ function App() {
       {/* Menu Part End */}
 
       {/* Banner Part Start */}
-      <div className="bg-[url('./assets/Image.jpg')] bg-no-repeat bg-cover bg-center">
+      <div className="bg-banner bg-no-repeat bg-cover bg-center">
         <Container>
           <Flex className={"justify-start"}>
             <div className="w-1/2 ml-40 py-44">
@@ -80,6 +80,33 @@ function App() {
         </Container>
       </div>
       {/* Banner Part End */}
+
+      {/* Information Part Start */}
+      <div className="bg-white py-10">
+        <Container>
+          <Flex className={"justify-between items-center"}>
+            <div className="w-[30%]">
+              <Flex className={"items-center"}>
+                <TbNumber2 className='pr-2 text-3xl'/>
+                <Heading as={"h4"} className={"font-DMSans text-[16px]"} text={"Two years warranty"} />
+              </Flex>
+            </div>
+            <div className="w-[30%]">
+              <Flex className={"items-center justify-center"}>
+                <FaTruck className='pr-2 text-3xl'/>
+                <Heading as={"h4"} className={"font-DMSans text-[16px]"} text={"Two years warranty"} />
+              </Flex>
+            </div>
+            <div className="w-[30%]">
+              <Flex className={"items-center justify-end"}>
+                <FaUndo className='pr-2 text-3xl'/>
+                <Heading as={"h4"} className={"font-DMSans text-[16px]"} text={"Two years warranty"} />
+              </Flex>
+            </div>
+          </Flex>
+        </Container>
+      </div>
+      {/* Information Part End */}
     </>
   )
 }
