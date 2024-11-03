@@ -6,7 +6,7 @@ import Logo from './assets/logo.png'
 import Menu from './components/Menu'
 import Button from './components/Button'
 import Heading from './components/Heading'
-import { HiMiniBars2 } from "react-icons/hi2";
+import { HiMiniBars3BottomLeft } from "react-icons/hi2";
 import { IoSearch } from "react-icons/io5";
 import { FaUser, FaShoppingCart, FaTruck, FaUndo } from "react-icons/fa";
 import { TbNumber2 } from "react-icons/tb";
@@ -45,7 +45,7 @@ function App() {
           <Flex className={"items-center"}>
             <div className="w-[20%]">
               <Flex className={"justify-start"}>
-                <HiMiniBars2 className='relative top-[2px] mr-1' />
+                <HiMiniBars3BottomLeft className='relative top-[2px] mr-1' />
                 <Button btnName={"Shop by Category"} />
               </Flex>
             </div>
